@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <title>Open Research | Responsible AI (RAI)</title>
+    <style>
+      #shuffle-container {
+        visibility: hidden;
+      }
+      .news-ticker {
+        background: #2c3e50;
+        color: white;
+        padding: 8px 0;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .news-ticker-content {
+        display: inline-block;
+        animation: scroll-left 25s linear infinite;
+        transform: translateX(0%);
+      }
+      @keyframes scroll-left {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+      }
+      .news-label {
+        background: #3498db;
+        color: white;
+        padding: 2px 8px;
+        margin-right: 15px;
+        font-weight: bold;
+        border-radius: 3px;
+      }
+    </style>
+    <noscript><style>
+      #shuffle-container {
+        visibility: visible;
+      }
+    </style></noscript>
+    <script>
+      // Shuffle CAs
+      document.addEventListener("DOMContentLoaded", function() {
+        const container = document.getElementById("shuffle-container");
+        const children = Array.from(container.children);
+
+        // 50% chance to shuffle
+        if (Math.random() <= 0.5) {
+          container.insertBefore(children[4], children[3]);
+        }
+
+        // Now unhide them
+        container.style.visibility = "visible";
+      });
+    </script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand brand" href="index.html">Open Research</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="header" style="text-align:center">
+      <a href="">
+        <img src="images/team_logo.png" class="logo-left">
+      </a>
+      <a href="">
+        <img src="images/constitution.png" class="logo-right">
+      </a>
+      <h1>Open Research: Responsible AI (RAI)</h1>
+      <h3>© 2025–2026</h3>
+    </div>
+    <!-- Intro -->
+    <div class="container sec" id="intro">
+      <div style="text-align: center;">
+        <font style="color: #8c1515; font-weight: bold; font-size: 1.2em"> The past project please see <a href="https://kaggle.com/writeups/aisuko/rmit-hackathon-2025">RMIT Hackathon 2025</a>. </font>
+      </div>
+    </div>
+    <!-- News Ticker -->
+    <div class="news-ticker">
+      <div class="news-ticker-content">
+        <span class="news-label">LATEST NEWS</span>
+        🔬 The research is in the processing • 🎯 Next hackathon event is under designing • 🚀 Stay tuned for exciting updates from The Black Logit team
+      </div>
+    </div>
+    <!-- Staff Info -->
+    <div class="container sec" id="people">
+      <!-- <div class="row"> -->
+      <div class="col" id="shuffle-container">
+        <h2>Group Members</h2>
+        <div class="instructor">
+          <a href="https://www.linkedin.com/in/alessandro-d-aloia-4bbab3379/">
+            <div class="instructorphoto">
+              <img src="images/alex.jpeg">
+            </div>
+            <div>Alex</div>
+          </a>
+          <div>Top</div>
+        </div>
+        <div class="instructor">
+          <a href="https://www.linkedin.com/in/bowen-li-10101197/">
+            <div class="instructorphoto">
+              <img src="images/bowen.png">
+            </div>
+            <div>Bowen</div>
+          </a>
+          <div>ADC</div>
+        </div>
+        <div class="instructor">
+          <a href="https://www.linkedin.com/in/cyrus-gao/">
+            <div class="instructorphoto">
+              <img src="images/cyrus.jpeg">
+            </div>
+            <div>Cyrus</div>
+          </a>
+          <div>MID/Jungle</div>
+        </div>
+        <div class="instructor">
+          <a href="https://www.linkedin.com/in/patrick-d-taylor/">
+            <div class="instructorphoto">
+              <img src="images/patrick.jpeg">
+            </div>
+            <div>Patrick</div>
+          </a>
+          <div>Top/Jungle</div>
+        </div>
+        <div class="instructor">
+          <a href="https://www.linkedin.com/in/thilina-tharanga/">
+            <div class="instructorphoto">
+              <img src="images/thilina.jpeg">
+            </div>
+            <div>Thilina</div>
+          </a>
+          <div>Support</div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <!-- Content -->
+  <div class="sechighlight">
+    <div class="container sec" id="content">
+    <h2>About The Black Logit</h2>
+    <h3>What do we do?</h3>
+    <p>The Black Logit is a multidisciplinary research group that bridges cutting-edge AI research with practical implementation and community engagement. We are dedicated to building transparent, ethical, and trustworthy AI systems through three core pillars: advancing responsible AI research, developing scalable cloud-native ML infrastructure, and fostering innovation through community events. Our research explores how large language models develop internal behaviors and how these can be guided responsibly, while our technical expertise enables us to build production-ready systems that accelerate AI development and deployment at scale.</p>
+    <h3>Our Capabilities</h3>
+    <ul>
+      <li>
+        <b>Research Excellence</b>
+        <p>We conduct cutting-edge research in responsible AI, focusing on transparency, explainability, and ethical AI systems. Our work spans behavioral analysis of large language models, AI safety benchmarking, and human-AI alignment.</p>
+      </li>
+      <li>
+        <b>Cloud-Native ML Acceleration Pipelines</b>
+        <p>We specialize in building scalable, cloud-native machine learning pipelines that accelerate AI development and deployment. Our expertise includes distributed training, model optimization, and efficient inference systems.</p>
+      </li>
+      <li>
+        <b>Hackathon Event Hosting</b>
+        <p>We organize and host hackathon events to foster innovation and collaboration in the AI community. These events bring together researchers, developers, and enthusiasts to tackle real-world AI challenges and promote responsible AI practices.</p>
+      </li>
+    </ul>
+
+    </div>
+  </div>
+
+
+  <p style="text-align: center; margin: 40px 0; color: #666;">Acknowledgment: Code adapted from <a href="https://stanford-cs336.github.io/" style="color: #8c1515;">Stanford CS336</a></p>
+
+  <!-- jQuery and Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  
+  <!-- Add whitespace to ensure schedule is visible when banner is active -->
+  <!-- <div style="height: 200px;"></div> -->
+  </body>
+</html>
